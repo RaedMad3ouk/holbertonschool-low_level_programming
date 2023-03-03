@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+
 /**
  * print_alphabet - prints lowercase alphabet
  * Return: 0
@@ -11,8 +11,8 @@
 
 	while (c <= 'z')
 	{
-	_putchar(c);
-	c++;
+	_putchar(c++);
+
 	}
 
 	_putchar('\n');
