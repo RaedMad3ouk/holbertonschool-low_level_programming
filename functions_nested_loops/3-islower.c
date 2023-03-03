@@ -1,24 +1,15 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * _islower - Entry point
  *
+ * @c: char
  * Return: Always 0 (Success)
  */
 
 int _islower(int c)
 {
-	if
-	{
-	(c >= 'a' && c => 'z')
-	return 1;
-	}
-
-	else
-	{
-
-	return 0;
-
-	}
-
-	}
+	if (c >= 'a' && c <= 'z')
+		return (1);
+	return (0);
+}
