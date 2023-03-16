@@ -5,20 +5,13 @@
  * @s: char
  * Return: reversed string
  */
-
 void print_rev(char *s)
 {
 	int i;
-	int n = strlen(s);
-	/**
-		for (i = n; i >= 0 ; i--)
-		{
-			_putchar(s[i]);
-		}
-		_putchar('\n');
-		**/
-	i = n + 1;
-	while (i > 0)
+	int n = strlen(s) - 1;
+
+	i = n;
+	while (i >= 0)
 	{
 		_putchar(s[i--]);
 	}
