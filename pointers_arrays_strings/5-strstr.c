@@ -24,7 +24,7 @@ char *_strstr(char *haystack, char *needle)
 				break;
 
 		if (j == len)
-			return (s1);
+			return (s);
 	} while (*s != '\0');
 
 	return (0);
