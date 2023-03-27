@@ -9,10 +9,10 @@ int raed(int n, int x)
 {
 	if (x > 9)
 		return (1);
-	
+
 	else if (n % x != 0)
 		return (raed(n, ++x));
-	
+
 	return (0);
 }
 
