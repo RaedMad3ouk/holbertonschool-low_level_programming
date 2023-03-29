@@ -16,15 +16,16 @@ if (!str)
 	return (NULL);
 
 for (len = 0; str[len]; len++)
-
+{
 	len++;
 	x = malloc(len * sizeof(char));
-
-if (!x)
-	return (NULL);
+}
+	if (!x)
+		return (NULL);
 
 	for (i = 0; i <= len; i++)
+	{
 		x[i] = str[i];
-
+	}
 	return (x);
 }
