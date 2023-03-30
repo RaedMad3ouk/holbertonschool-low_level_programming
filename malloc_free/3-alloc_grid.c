@@ -19,8 +19,10 @@ for(i = 0; i < height; i++)
 	if (x == NULL)
 	{
 		for(i = 0; i < height; i++)
+		{
 			free (x[i]);
-		free (x);
+			free (x);
+		}
 		return (NULL);
 	}
 	
