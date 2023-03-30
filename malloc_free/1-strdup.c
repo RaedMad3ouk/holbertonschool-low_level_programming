@@ -16,10 +16,10 @@ if (!str)
 	return (NULL);
 
 for (len = 0; str[len]; len++)
-{
-	len++;
+	;
+
 	x = malloc(len * sizeof(char));
-}
+
 	if (!x)
 		return (NULL);
 
