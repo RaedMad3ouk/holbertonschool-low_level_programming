@@ -2,6 +2,14 @@
 #include <stdlib.h>
 #include "dog.h"
 
+/**
+ * new_dog - write a function that creates a new dog
+ * @name: name of dog
+ * @age: age of dog
+ * @owner: owner of dog
+ * Return: new dog
+ */
+
 dog_t *new_dog(char *name, float age, char *owner)
 {
 
@@ -20,19 +28,19 @@ for (j = 0; owner[j]; j++)
 i++;
 j++;
 newname = malloc(i);
-if (!newname)
+	if (!newname)
 	{
-		free (x);
-		return(NULL);
+		free(x);
+		return (NULL);
 	}
 newowner = malloc(j);
-if (!newowner)
+	if (!newowner)
 	{
 		free(newname);
-		free (x);
-		return(NULL);
+		free(x);
+		return (NULL);
 	}
-	
+
 	for (k = 0; k < i; k++)
 		newname[k] = name[k];
 	for (k = 0; k < j; k++)
