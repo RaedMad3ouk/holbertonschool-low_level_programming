@@ -1,5 +1,6 @@
 #ifndef PROT
 #define PROT
+#include <stddef.h>
 
 /**
  * struct op - Struct op
