@@ -10,9 +10,6 @@
 
 int main(int argc, char *argv[])
 {
-	int i, j;
-	int (*func)(int, int);
-
 	if (argc != 4)
 	{
 		printf("Error\n");
@@ -28,9 +25,3 @@ int main(int argc, char *argv[])
 	}
 	return (0);
 }
-
-
-
-
-
-
