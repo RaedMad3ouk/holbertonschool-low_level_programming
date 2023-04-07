@@ -1,12 +1,11 @@
 #include "3-calc.h"
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
  * main - calculator
  * @argc: size of argv
  * @argv: array of arguments
- * Return: result
+ * Return: answer
  */
 
 int main(int argc, char *argv[])
