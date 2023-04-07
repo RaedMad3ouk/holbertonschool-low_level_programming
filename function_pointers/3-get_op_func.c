@@ -2,8 +2,8 @@
 #include <string.h>
 
 /**
- * get_op_func - selects a function to perform
- * @s: operator
+ * get_op_func - selects the correct function to perform
+ * @s: operator passed as argument
  * Return: pointer to function
  */
 
@@ -19,9 +19,9 @@ int (*get_op_func(char *s))(int a, int b)
 	};
 	int i = 0;
 
-	while (ops[i].op != NULL)
+	while (ops[i].op)
 	{
-		if (*s == *ops[i].op)
+		if (strcmp(s, ops[i].op) == 0)
 			return (ops[i].f);
 		i++;
 	}
