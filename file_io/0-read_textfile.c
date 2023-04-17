@@ -19,7 +19,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	buff = malloc(letters);
 	if (!buff)
 		return (0);
-	
+
 	of = open(filename, O_RDONLY);
 	if (of == -1)
 	{
